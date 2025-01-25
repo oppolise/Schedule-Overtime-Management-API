@@ -30,25 +30,25 @@ Backend REST API for the Schedule Management mobile application built with Node.
 
 ## Getting Started
 
-### 1.Prerequisites
+### 1. Prerequisites
 ```bash
 node --version  # Ensure Node.js is installed
 mongodb --version  # Ensure MongoDB is installed
 ```
 
-### 2.Installation
+### 2. Installation
 ```bash
 git clone https://github.com/oppolise/Schedule-Overtime-Management-API
 cd backend_flutter
 npm install
 ```
 
-### 3.Configure MongoDB
+### 3. Configure MongoDB
 ```javascript
 mongoose.connect('mongodb://localhost:27017/your_database') //Update connection string in config/db.js
 ```
 
-### 4.Start the server
+### 4. Start the server
 ```bash
 npm start
 ```
