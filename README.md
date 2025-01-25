@@ -38,7 +38,7 @@ mongodb --version  # Ensure MongoDB is installed
 
 ### Installation
 ```bash
-git clone [https://github.com/oppolise/Schedule-Overtime-Management-API]
+git clone https://github.com/oppolise/Schedule-Overtime-Management-API
 cd backend_flutter
 npm install
 ```
