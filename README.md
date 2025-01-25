@@ -38,36 +38,43 @@ mongodb --version  # Ensure MongoDB is installed
 
 ### Installation
 ```bash
-git clone [repository-url]
+git clone [https://github.com/oppolise/Schedule-Overtime-Management-API]
 cd backend_flutter
 npm install
 ```
 
 ### Configure MongoDB
 ```javascript
-// Update connection string in config/db.js
-mongoose.connect('mongodb://localhost:27017/your_database')
+mongoose.connect('mongodb://localhost:27017/your_database') //Update connection string in config/db.js
 ```
 
 ### Start the server
 ```bash
 npm start
 ```
+Server runs on http://localhost:3000 by default
 
 ## API Documentation
 
 ### Authentication
 - `POST /register` - Register new user
 - `POST /login` - User login
+- `GET /users/:userId` - Get user profile
+- `PUT /users/:userId` - Update user profile
 
 ### Teams
 - `GET /teams/:userId` - Get user's teams
 - `POST /teams/:userId` - Create new team
+- `GET /teams/:teamId/members` - Get team members
 - `POST /teams/:teamId/members` - Add team member
+- `DELETE /teams/:teamId` - Delete team
 
 ### Schedules
 - `GET /schedules/:scheduleId/calendar` - Get schedule calendar
 - `POST /schedules` - Create new schedule
 - `PUT /scheduleDays/:id` - Update schedule day
+- `POST /schedules/:scheduleId/swap-days` - Swap working days
+- `DELETE /schedules/:id` - Delete schedule
+
 
 
